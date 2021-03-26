@@ -21,7 +21,7 @@
 		<nav id="sidebar" class="sidebar">
 			<div class="sidebar-content js-simplebar">
 				<a class="sidebar-brand" href="#">
-                    <span class=""align-middle"><img src="../src/img/avatars/SonaSystem - Copia (2).png" width="210px" /></span>
+                    <span class="align-middle"><img src="../src/img/avatars/SonaSystem - Copia (2).png" width="210px" /></span>
                 </a>
 
 				<ul class="sidebar-nav">
@@ -96,7 +96,7 @@
                                  <i class="align-middle" data-feather="settings"></i>
                                </a>
 								<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown">
-                                    <img src="/src/img/avatars/avatar0.jpg" class="avatar img-fluid rounded mr-1"/> <span class="text-dark"> Sem Nome</span>
+                                    <img src="./img/avatars/avatar0.jpg" class="avatar img-fluid rounded mr-1"/> <span class="text-dark"> Sem Nome</span> 
                                 </a>
 							<div class="dropdown-menu dropdown-menu-right">
 								<a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="user"></i> Perfil</a>
@@ -111,7 +111,6 @@
 					</ul>
 				</div>
 		  </nav>
-
 			<main class="content">
 				<div class="container-fluid p-0">
 					<h1 class="h3 mb-3"> <u>Formulário</h1> </u>
@@ -121,8 +120,8 @@
 								<div class="card-header">
 									<button type="button" class="btn btn-primary border-dark bg-secondary-dark fa-pull-right">Exportar</button>
 								</div>
-							  <div class="card-body">
-								   <form>
+								<div class="card-body">
+									<form>
 										<div class="row">
 											<div class="mb-3 col-md-6">
 												<label class="form-label" for="inputEmail4">Nome do Cliente</label>
@@ -134,15 +133,15 @@
 											</div>
 										</div>
 										<div class="row">
-										    <div class="mb-3 col-md-6">
+											<div class="mb-3 col-md-6">
 												<label class="form-label" for="inputAddress">Bairro</label>
 												<input type="text" class="form-select" id="Bairro" placeholder="Bairro">
-										  </div>
-										   <div class="mb-3 col-md-6">
-											    <label class="form-label" for="inputAddress2">Nome do Motoboy</label>
-										     	<input type="text" class="form-control" id="NomeMotoboy" placeholder="Motoboy Responsável">
-										  </div>
-									   </div>
+											</div>
+											<div class="mb-3 col-md-6">
+													<label class="form-label" for="inputAddress2">Nome do Motoboy</label>
+													<input type="text" class="form-control" id="NomeMotoboy" placeholder="Motoboy Responsável">
+											</div>
+										</div>
 										<div class="row">
 											<div class="mb-3 col-md-6">
 												<label class="form-label" for="inputCity">Número da Nota Fiscal</label>
@@ -151,51 +150,48 @@
 											<div class="mb-3 col-md-4">
 												<label class="form-label" for="inputState">Forma de Pagamento</label>
 												<select id="Pagamento" class="form-select">
-                  						            <option selected>Selecione</option>
-                   								    <option>Boleto</option>
+													<option selected>Selecione</option>
+													<option>Boleto</option>
 													<option>Crédito</option>
 													<option>Débito</option>
 													<option>Depósito Bancário</option>
-												    <option>Dinheiro</option>
-                  						       </select>
+													<option>Dinheiro</option>
+											</select>
 											</div>
 											<div class="mb-3 col-md-2">
 												<label class="form-label" for="inputZip">Transportadora</label>
 												<input type="number" class="form-control" id="Transportadora">
 											</div>
-									   </div>
-											<div class="row">
-												<div class="mb-3 col-md-4">
-													<label class="form-label" for="inputCity">Frete Motoboy</label>
-														<input type="number" class="form-control" id="FreteMotoboy">
-										    	</div>
-												<div class="mb-3 col-md-4">
-													<label class="form-label" for="inputCity">Frete</label>
-														<input type="number" class="form-control" id="Frete">
-										    	</div>
-												<div class="mb-3 col-md-4">
-													<label class="form-label" for="inputCity">Valor Total</label>
-														<input type="number" class="form-control" id="ValorTotal">
-										    	</div>
+										</div>
+										<div class="row">
+											<div class="mb-3 col-md-3">
+												<label class="form-label" for="inputCity">Frete Motoboy</label>
+													<input type="number" class="form-control" id="FreteMotoboy">
 											</div>
-											<div class="mb-3 col-md-2">
+											<div class="mb-3 col-md-3">
+												<label class="form-label" for="inputCity">Frete</label>
+													<input type="number" class="form-control" id="Frete">
+											</div>
+											<div class="mb-3 col-md-3">
+												<label class="form-label" for="inputCity">Valor Total</label>
+													<input type="number" class="form-control" id="ValorTotal">
+											</div>
+											<div class="mb-3 col-md-3">
 												<label class="form-label" for="inputZip">Retirada</label>
 												<input type="text" class="form-control" id="Retirada">
 											</div>
-											
-											   <button type="submit" class="btn btn-primary " >Salvar</button>
-											   <button type="reset" class="btn btn-secondary" >Cancelar</button>
-											
-								        </div>
-						     	     </div>
-								  </form>
-				              </div>
-						 </div>
-					  </div>
-				  </div>
-               </div>
-		  </main>
-
+										</div>
+										<div class="mb-6 col-md-12 btn" >
+											<button type="reset" class="btn btn-secondary" >Cancelar</button>
+											<button type="submit" class="btn btn-primary " >Salvar</button>
+										</div>
+									</form><!--form-->
+								</div><!--card-body-->
+							</div><!--card-->
+						</div><!--col-md-12-->
+					</div><!--row-->
+				</div><!--container-fluid p-0-->
+			</main> <!--content-->
 			<footer class="footer">
 				<div class="container-fluid">
 					<div class="row text-muted">
