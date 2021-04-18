@@ -54,9 +54,9 @@ input[type=text] {
     border-top: none;
     z-index: 99;
     /*position the autocomplete items to be the same width as the container:*/
-    top: 100%;
+    /* top: 100%;
     left: 0;
-    right: 0;
+    right: 0; */
   }
   
   .autocomplete-items input {
