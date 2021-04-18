@@ -52,6 +52,7 @@ input[type=text] {
     border: 1px solid #d4d4d4;
     border-bottom: none;
     border-top: none;
+    background: white;
     z-index: 99;
     /*position the autocomplete items to be the same width as the container:*/
     /* top: 100%;
@@ -62,7 +63,8 @@ input[type=text] {
   .autocomplete-items input {
     padding: 10px;
     cursor: pointer;
-    background-color: #fff; 
+    background-color:aquamarine;
+
     border-bottom: 1px solid #d4d4d4; 
   }
   
