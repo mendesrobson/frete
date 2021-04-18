@@ -3,24 +3,25 @@
    header("Access-Control-Allow-Origin: *");
    header("Content-Type: application/json; charset=UTF-8");
    
-   class Regioes
+   class Clientes
    {
-        public function Buscarcodigo($codigo)
+        public function Buscarnome($nome)
         {
              require('./db/conect.php');
              
-             $codigos = '';
+             $nomes = '';
              
-             $nomecliente = split('=', $codigo);
+             $nomecliente = split('=', $nome);
 
-            if($nomecliente[0] == 'codigo'){
-              $codigos  = $nomecliente[1];
+            if($nomecliente[0] == 'nome'){
+              $nomes  = $nomecliente[1];
             }
+            
              
-            if($codigos != ''){
-                $sql = "SELECT * FROM Regioes where CodBairro = ". $codigos . " ORDER BY Bairro ASC";
+            if($nomes != ''){
+              $sql = "SELECT * FROM Clientes where NomeFantasia like '%". $nomes ."%' ORDER BY NomeFantasia ASC";
             }else {
-                $sql = "SELECT * FROM Regioes ORDER BY Bairro ASC";
+                $sql = "SELECT * FROM Clientes ORDER BY NomeFantasia ASC";
             }
              
              
@@ -41,23 +42,23 @@
             return $resultados;
         }
 
-
-        public function Buscarnome($bairro)
+        public function Buscarcodigo($codigo)
         {
              require('./db/conect.php');
              
-             $nomes = '';
+             $codigocliente = '';
              
-             $nomecliente = split('=', $bairro);
+             $codi = split('=', $codigo);
 
-            if($nomecliente[0] == 'nome'){
-              $nomes  = $nomecliente[1];
+            if($codi[0] == 'codigo'){
+              $codigocliente  = $codi[1];
             }
+            
              
             if($nomes != ''){
-              $sql = "SELECT * FROM Regioes where Bairro like '%". $nomes ."%' ORDER BY Bairro ASC";
+              $sql = "SELECT * FROM Clientes where CodCliente = ". $codigocliente ."  ORDER BY CodCliente ASC";
             }else {
-                $sql = "SELECT * FROM Regioes ORDER BY Bairro ASC";
+                $sql = "SELECT * FROM Clientes ORDER BY CodCliente ASC";
             }
              
              
